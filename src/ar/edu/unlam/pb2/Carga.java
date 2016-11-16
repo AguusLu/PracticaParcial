@@ -1,8 +1,11 @@
 package ar.edu.unlam.pb2;
 
+import java.util.TreeSet;
+
 public class Carga {
 	
 	private Integer peso;
+	
 
 	public Integer getPeso() {
 		return peso;
@@ -15,6 +18,11 @@ public class Carga {
 	public Carga()
 	{
 		this.peso = 0;
+	}
+	
+	public Carga(Integer peso)
+	{
+		this.peso=0;
 	}
 
 	@Override
@@ -41,9 +49,4 @@ public class Carga {
 			return false;
 		return true;
 	}
-	
-	
-	
-	
-
 }

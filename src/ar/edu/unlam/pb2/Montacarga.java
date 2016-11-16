@@ -18,10 +18,14 @@ public class Montacarga {
 
 	public void sumatoriaDeCargas(Carga cargas)
 	{
+		Integer peso;
+		peso = cargas.getPeso();
 		for(int i=0; i<obtenerCantidadDeCargas();i++)
 		{	
-	//		suma = suma + cargas.
+			sumatoria = sumatoria + peso;
 		}
+		
+		this.setSumatoria(sumatoria);
 	}
 	
 	public Integer obtenerCantidadDeCargas()
@@ -34,12 +38,10 @@ public class Montacarga {
 		if(!this.cargas.add(cargas));
 		{
 			{
-				throw new Exception("No se admiten" + cargas.getPeso() );
+				throw new Exception("No se admiten" + cargas.getPeso());
 			}
 		}
 	}
-
-	
 	
 	public TreeSet<Carga> getCargas() {
 		return cargas;
